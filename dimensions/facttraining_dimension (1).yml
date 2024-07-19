@@ -1,0 +1,27 @@
+unique_name: facttraining_dimension (1)
+object_type: dimension
+label: facttraining_dimension (1)
+hierarchies:
+  - unique_name: Training Dimension
+    label: Training Dimension
+    levels:
+      - unique_name: Employee Number Level
+      - unique_name: Training Dimension Level
+level_attributes:
+  - unique_name: Employee Number Level
+    label: Employee Number Level
+    contains_unique_names: false
+    dataset: facttraining
+    is_unique_key: false
+    key_columns:
+      - EmployeeNumber
+    name_column: EmployeeNumber
+  - unique_name: Training Dimension Level
+    label: Training Dimension Level
+    contains_unique_names: false
+    dataset: facttraining
+    is_unique_key: false
+    key_columns:
+      - TrainingTimesLastYear
+    name_column: TrainingTimesLastYear
+type: standard

@@ -1,0 +1,6 @@
+unique_name: con_hive_metastore_employee_attrition_performance
+object_type: connection
+label: con_hive_metastore_employee_attrition_performance
+as_connection: Databricks_Demo
+database: hive_metastore
+schema: employee_attrition_performance

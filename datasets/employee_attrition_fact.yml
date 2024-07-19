@@ -1,0 +1,76 @@
+unique_name: employee_attrition_fact
+object_type: dataset
+label: employee_attrition_fact
+columns:
+  - name: Age
+    data_type: long
+  - name: Attrition
+    data_type: string
+  - name: BusinessTravel
+    data_type: string
+  - name: DailyRate
+    data_type: long
+  - name: Department
+    data_type: string
+  - name: DistanceFromHome
+    data_type: long
+  - name: Education
+    data_type: long
+  - name: EducationField
+    data_type: string
+  - name: EmployeeCount
+    data_type: long
+  - name: EmployeeNumber
+    data_type: long
+  - name: EnvironmentSatisfaction
+    data_type: long
+  - name: Gender
+    data_type: string
+  - name: HourlyRate
+    data_type: long
+  - name: JobInvolvement
+    data_type: long
+  - name: JobLevel
+    data_type: long
+  - name: JobRole
+    data_type: string
+  - name: JobSatisfaction
+    data_type: long
+  - name: MaritalStatus
+    data_type: string
+  - name: MonthlyIncome
+    data_type: long
+  - name: MonthlyRate
+    data_type: long
+  - name: NumCompaniesWorked
+    data_type: long
+  - name: Over18
+    data_type: string
+  - name: OverTime
+    data_type: string
+  - name: PercentSalaryHike
+    data_type: long
+  - name: PerformanceRating
+    data_type: long
+  - name: RelationshipSatisfaction
+    data_type: long
+  - name: StandardHours
+    data_type: long
+  - name: StockOptionLevel
+    data_type: long
+  - name: TotalWorkingYears
+    data_type: long
+  - name: TrainingTimesLastYear
+    data_type: long
+  - name: WorkLifeBalance
+    data_type: long
+  - name: YearsAtCompany
+    data_type: long
+  - name: YearsInCurrentRole
+    data_type: long
+  - name: YearsSinceLastPromotion
+    data_type: long
+  - name: YearsWithCurrManager
+    data_type: long
+connection_id: con_hive_metastore_employee_attrition_performance
+table: employee_attrition_fact

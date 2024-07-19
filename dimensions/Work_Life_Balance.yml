@@ -1,0 +1,18 @@
+unique_name: Work_Life_Balance
+object_type: dimension
+label: Work Life Balance
+hierarchies:
+  - unique_name: Work_Life_Balance_Hierarchy
+    label: Work Life Balance Hierarchy
+    levels:
+      - unique_name: Work_Life_Balance_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Work_Life_Balance_Level
+    label: Work Life Balance Level
+    contains_unique_names: false
+    dataset: factworklife
+    key_columns:
+      - WorkLifeBalance
+    name_column: WorkLifeBalance
+type: standard

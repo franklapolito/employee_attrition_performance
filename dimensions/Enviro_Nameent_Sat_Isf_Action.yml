@@ -1,0 +1,18 @@
+unique_name: Enviro_Nameent_Sat_Isf_Action
+object_type: dimension
+label: Enviro Nameent Sat Isf Action
+hierarchies:
+  - unique_name: Enviro_Nameent_Sat_Isf_Action_Hierarchy
+    label: Enviro Nameent Sat Isf Action Hierarchy
+    levels:
+      - unique_name: Enviro_Nameent_Sat_Isf_Action_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Enviro_Nameent_Sat_Isf_Action_Level
+    label: Enviro Nameent Sat Isf Action Level
+    contains_unique_names: false
+    dataset: factworklife
+    key_columns:
+      - EnvironmentSatisfaction
+    name_column: EnvironmentSatisfaction
+type: standard

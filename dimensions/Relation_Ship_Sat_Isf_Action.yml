@@ -1,0 +1,18 @@
+unique_name: Relation_Ship_Sat_Isf_Action
+object_type: dimension
+label: Relation Ship Sat Isf Action
+hierarchies:
+  - unique_name: Relation_Ship_Sat_Isf_Action_Hierarchy
+    label: Relation Ship Sat Isf Action Hierarchy
+    levels:
+      - unique_name: Relation_Ship_Sat_Isf_Action_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Relation_Ship_Sat_Isf_Action_Level
+    label: Relation Ship Sat Isf Action Level
+    contains_unique_names: false
+    dataset: factworklife
+    key_columns:
+      - RelationshipSatisfaction
+    name_column: RelationshipSatisfaction
+type: standard

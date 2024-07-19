@@ -1,0 +1,27 @@
+unique_name: EmployeeSatisfactionSS copy
+object_type: model
+label: EmployeeSatisfactionSS copy
+dimensions: []
+metrics:
+  - unique_name: m_employee_attrition_fact_MonthlyIncome_avg
+relationships:
+  - unique_name: >-
+      employee_attrition_fact_EmployeeNumber_to_Work Life Dimension_Work Life
+      Dimension Level
+    from:
+      dataset: employee_attrition_fact
+      join_columns:
+        - EmployeeNumber
+    to:
+      dimension: Work Life Dimension
+      level: Work Life Dimension Level
+  - unique_name: >-
+      employee_attrition_fact_EmployeeNumber_to_Job Details Dimension_Employee
+      Number Level
+    from:
+      dataset: employee_attrition_fact
+      join_columns:
+        - EmployeeNumber
+    to:
+      dimension: Job Details Dimension
+      level: Employee Number Level

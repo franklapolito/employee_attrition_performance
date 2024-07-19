@@ -1,0 +1,6 @@
+unique_name: 'Employee Performance Attrition '
+object_type: catalog
+label: 'Employee Performance Attrition '
+aggressive_agg_promotion: false
+as_version: 1
+build_speculative_aggs: true

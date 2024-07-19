@@ -1,0 +1,6 @@
+unique_name: m_factjobdetails_JobLevel_sum
+object_type: metric
+label: Job Level
+calculation_method: sum
+column: JobLevel
+dataset: factjobdetails

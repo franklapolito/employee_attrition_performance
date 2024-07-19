@@ -1,0 +1,6 @@
+unique_name: m_factjobdetails_JobInvolvement_sum
+object_type: metric
+label: Job Involvement
+calculation_method: sum
+column: JobInvolvement
+dataset: factjobdetails

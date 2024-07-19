@@ -1,0 +1,74 @@
+unique_name: Work Life Dimension
+object_type: dimension
+label: Work Life Dimension
+hierarchies:
+  - unique_name: Work Life Dimension Hierarchy
+    label: Work Life Dimension Hierarchy
+    levels:
+      - unique_name: Work Life Dimension Level
+      - unique_name: Environmental Satisfaction  Level
+      - unique_name: Relationship Satisfaction Level
+      - unique_name: Work Life Balance Level
+      - unique_name: Years in Current Role Level
+      - unique_name: Years Since Last Promotion Level
+      - unique_name: Years With Current Manager Level
+level_attributes:
+  - unique_name: Work Life Dimension Level
+    label: Work Life Dimension Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - EmployeeNumber
+    name_column: EmployeeNumber
+  - unique_name: Environmental Satisfaction  Level
+    label: Environmental Satisfaction  Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - EnvironmentSatisfaction
+    name_column: EnvironmentSatisfaction
+  - unique_name: Relationship Satisfaction Level
+    label: Relationship Satisfaction Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - RelationshipSatisfaction
+    name_column: RelationshipSatisfaction
+  - unique_name: Work Life Balance Level
+    label: Work Life Balance Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - WorkLifeBalance
+    name_column: WorkLifeBalance
+  - unique_name: Years in Current Role Level
+    label: Years in Current Role Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - YearsInCurrentRole
+    name_column: YearsInCurrentRole
+    sort_column: YearsInCurrentRole
+  - unique_name: Years Since Last Promotion Level
+    label: Years Since Last Promotion Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - YearsSinceLastPromotion
+    name_column: YearsSinceLastPromotion
+  - unique_name: Years With Current Manager Level
+    label: Years With Current Manager Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - YearsWithCurrManager
+    name_column: YearsWithCurrManager
+relationships: []
+type: standard

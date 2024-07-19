@@ -1,0 +1,54 @@
+unique_name: Job Details Dimension
+object_type: dimension
+label: Job Details Dimension
+hierarchies:
+  - unique_name: Job Details Hierarchy
+    label: Job Details Hierarchy
+    levels:
+      - unique_name: Employee Number Level
+      - unique_name: JobRole
+      - unique_name: Job Involvement Level
+      - unique_name: Job Level Level
+      - unique_name: Over Time Level
+level_attributes:
+  - unique_name: JobRole
+    label: JobRole
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - JobRole
+    name_column: JobRole
+  - unique_name: Employee Number Level
+    label: Employee Number Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - EmployeeNumber
+    name_column: EmployeeNumber
+  - unique_name: Job Involvement Level
+    label: Job Involvement Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - JobInvolvement
+    name_column: JobInvolvement
+  - unique_name: Job Level Level
+    label: Job Level Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - JobLevel
+    name_column: JobLevel
+  - unique_name: Over Time Level
+    label: Over Time Level
+    contains_unique_names: false
+    dataset: employee_attrition_fact
+    is_unique_key: false
+    key_columns:
+      - OverTime
+    name_column: OverTime
+type: standard

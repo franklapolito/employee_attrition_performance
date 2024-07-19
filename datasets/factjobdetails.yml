@@ -1,0 +1,16 @@
+unique_name: factjobdetails
+object_type: dataset
+label: factjobdetails
+columns:
+  - name: EmployeeNumber
+    data_type: long
+  - name: JobRole
+    data_type: string
+  - name: JobInvolvement
+    data_type: long
+  - name: JobLevel
+    data_type: long
+  - name: OverTime
+    data_type: string
+connection_id: con_hive_metastore_employee_attrition_performance
+table: factjobdetails
