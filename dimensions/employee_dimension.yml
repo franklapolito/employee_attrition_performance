@@ -1,0 +1,43 @@
+unique_name: employee_dimension
+object_type: dimension
+label: Employee Dimension
+hierarchies:
+  - unique_name: employee_dimenion
+    label: Employee
+    levels:
+      - unique_name: employee_number
+        secondary_attributes:
+          - unique_name: employee_age
+            label: Employee Age
+            contains_unique_names: false
+            dataset: attrition_performance_fact
+            is_unique_key: false
+            key_columns:
+              - Age
+            name_column: Age
+          - unique_name: employee_gender
+            label: Employee Gender
+            contains_unique_names: false
+            dataset: attrition_performance_fact
+            is_unique_key: false
+            key_columns:
+              - Gender
+            name_column: Gender
+          - unique_name: employee_attrition
+            label: Employee Attrition
+            contains_unique_names: false
+            dataset: attrition_performance_fact
+            is_unique_key: false
+            key_columns:
+              - Attrition
+            name_column: Attrition
+level_attributes:
+  - unique_name: employee_number
+    label: Employee Number (PK)
+    contains_unique_names: false
+    dataset: attrition_performance_fact
+    is_unique_key: false
+    key_columns:
+      - EmployeeNumber
+    name_column: EmployeeNumber
+type: standard

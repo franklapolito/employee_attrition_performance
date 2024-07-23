@@ -1,6 +1,8 @@
-unique_name: employee_attrition_fact
+unique_name: attrition_performance_fact
 object_type: dataset
-label: employee_attrition_fact
+label: Attrition & Performance Fact
+description: >-
+  https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data
 columns:
   - name: Age
     data_type: long
@@ -72,5 +74,8 @@ columns:
     data_type: long
   - name: YearsWithCurrManager
     data_type: long
+  - name: YearlyIncome
+    data_type: long
+    sql: MonthlyRate * 12
 connection_id: con_hive_metastore_employee_attrition_performance
 table: employee_attrition_fact

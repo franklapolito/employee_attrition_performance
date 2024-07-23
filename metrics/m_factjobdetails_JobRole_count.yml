@@ -1,6 +1,0 @@
-unique_name: m_factjobdetails_JobRole_count
-object_type: metric
-label: Job Role
-calculation_method: count non-null
-column: JobRole
-dataset: factjobdetails

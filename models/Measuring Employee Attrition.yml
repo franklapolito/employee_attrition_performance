@@ -1,0 +1,15 @@
+unique_name: Measuring Employee Attrition
+object_type: model
+label: Measuring Employee Attrition
+dimensions: []
+metrics: []
+relationships:
+  - unique_name: >-
+      attrition_performance_fact_EmployeeNumber_to_employee_dimension_employee_number
+    from:
+      dataset: attrition_performance_fact
+      join_columns:
+        - EmployeeNumber
+    to:
+      dimension: employee_dimension
+      level: employee_number
